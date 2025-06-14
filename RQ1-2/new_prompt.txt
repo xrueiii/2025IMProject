@@ -1,0 +1,322 @@
+Question: Individuals’ and organizations’ reactions towards anti-Asian racism: individuals include celebrities, professionals, politicians, and general public; organizations include law enforcement agencies, government officials, and NGO groups.
+
+You are a sociology professor with 30 years of experiences analyzing Asian racism.
+Your task is to analyze the given text to identify named entities, categorize them, extract relevant sentences, and infer reactions or emotions with a focus on Asian-hate incidents.
+There are 4 steps for you to follow. We'll start with Step 1.
+
+Step 1: Named Entity Recognition and Categorization
+Identify all named entities in the text and categorize them as follows:
+
+[individuals]
+1. celebrities
+2. professionals
+3. politicians
+4. journalists/media
+5. general public
+6. perpetrators
+7. victims
+8. business owners
+[organizations]
+9. law enforcement agencies
+10. government officials
+11. Group/Association (NGO)
+12. Stores
+13. Communities
+
+Please normalize all name variants (e.g., 'Dr. Church', 'J. Church', 'Church') to a canonical form (e.g., 'Jacqueline Church') during processing to ensure consistent entity mapping.
+In the individuals category, both victims and perpetrators must be individuals involved in specific incidents of harm or aggression, not those who are potential victims due to broader social climate.
+If an entity overlaps between celebrities and other categories such as professionals or politicians, it should be classified under professionals or politicians.
+In the organizations category, business refers only to commercial entities that were directly affected by the incident; locations where the incident occurred or platforms used (e.g., apps) should not be counted. Sheriffs or representatives of law enforcement agencies should be categorized under law enforcement agencies in the organizations category.
+
+
+Step 2: Extract Related Sentences
+For each named entity identified in Step 1 based on concept trees in individual and organization, extract all relevant sentences from the text.
+
+Individual reactions concept tree:
+Individual Reactions toward Anti-Asian Hate
+Celebrities (e.g., athletes and actors) 
+├── Asians
+│   ├── Support Asian Americans
+│   │   ├── Attending marches/rallies
+│   │   ├── Speaking up on social media
+│   │   ├── Calling for being united
+│   ├── Hoping or advocacy for change (in the large society; in educational systems)
+│   ├── policy changes
+│   │   ├── Suggestions for policy changes
+│   ├── Reasons behind racism/discrimination
+│   │   ├── Politicians initiated anti-Asian hate and racism
+│   │   ├── Undermining human rights
+├── Non-Asians
+│   ├── Support Asian Americans
+│   │   ├── Attending marches/rallies
+│   │   ├── Speaking up on social media
+│   ├── policy changes
+│   │   ├── Suggestions for policy changes
+│   ├── Reasons behind racism/discrimination
+│   │   ├── Politicians initiated anti-Asian hate and racism
+│   │   ├── Undermining human rights
+├── Not specified
+│   ├── Support Asian Americans
+│   │   ├── Attending marches/rallies
+│   │   ├── Speaking up on social media
+│   ├── policy changes
+│   │   ├── Suggestions for policy changes
+│   ├── Reasons behind racism/discrimination
+│   │   ├── Politicians initiated anti-Asian hate and racism
+│   │   ├── Undermining human rights
+Professionals (e.g., university professors)
+├── Asians
+│   ├── Support Asian Americans
+│   │   ├── Educating students
+│   │   ├── Fostering conversations about anti-Asian hate
+│   │   ├── Attending marches/rallies
+│   │   ├── Speaking up on social media
+│   │   ├── Calling for being united
+│   ├── Hoping or advocacy for change (in the large society; in educational systems)
+│   ├── Policy changes
+│   │   ├── Suggestions for policy changes
+│   ├── Reasons behind racism/discrimination
+│   │   ├── Politicians initiated anti-Asian hate and racism
+│   │   ├── Undermining human rights
+├── Non-Asians
+│   ├── Support Asian Americans
+│   │   ├── Educating students
+│   │   ├── Fostering conversations about anti-Asian hate
+│   │   ├── Attending marches/rallies
+│   │   ├── Speaking up on social media
+│   ├── Policy changes
+│   │   ├── Suggestions for policy changes
+│   ├── Reasons behind racism/discrimination
+│   │   ├── Politicians initiated anti-Asian hate and racism
+│   │   ├── Undermining human rights
+├── Not specified
+│   ├── Support Asian Americans
+│   │   ├── Educating students
+│   │   ├── Fostering conversations about anti-Asian hate
+│   │   ├── Attending marches/rallies
+│   │   ├── Speaking up on social media
+│   ├── Policy changes
+│   │   ├── Suggestions for policy changes
+│   ├── Reasons behind racism/discrimination
+│   │   ├── Politicians initiated anti-Asian hate and racism
+│   │   ├── Undermining human rights
+Politicians (e.g., senators)
+├── Asians
+│   ├── Support Asian Americans
+│   │   ├── Attending marches/rallies
+│   │   ├── Speaking up on social media
+│   │   ├── Calling for being united
+│   ├── Hoping or advocacy for change (in the large society; in educational systems)
+│   ├── Policy changes
+│   │   ├── Suggestions for policy changes
+│   ├── Reasons behind racism/discrimination
+│   │   ├── Politicians initiated anti-Asian hate and racism
+│   │   ├── Undermining human rights
+├── Non-Asians
+│   ├── Donald Trump
+│   │   ├── Politicians initiated anti-Asian hate and racism
+│   │   ├── Color blind/minimizing racism
+│   │   ├── Support Asian Americans
+│   ├── Biden
+│   │   ├── Launching the Asian hate crime task force
+│   │   ├── Implementing gun control action
+│   │   ├── Support Asian Americans
+├── Not specified
+│   ├── Support Asian Americans
+│   │   ├── Attending marches/rallies
+│   ├── Policy changes
+│   │   ├── Suggestions for policy changes
+│   ├── Politicians initiated anti-Asian hate and racism
+│   ├── Color blind/minimizing racism
+│   ├── Reasons behind racism/discrimination
+│   │   ├── Politicians initiated anti-Asian hate and racism
+│   │   ├── Undermining human rights
+Journalists/media
+├── Within US
+│   ├── Asians
+│   │   ├── Youth as not an excuse (commenting on Atlanta's shooter)
+│   │   ├── Hoping or advocacy for change (in the large society; in educational systems)
+│   │   ├── Policy changes
+│   │   │   ├── Suggestions for policy changes
+│   │   ├── Reasons behind racism/discrimination
+│   │   │   ├── Politicians initiated anti-Asian hate and racism
+│   │   │   ├── Undermining human rights
+│   ├── Non-Asians
+│   │   ├── Youth as not an excuse (commenting on Atlanta's shooter)
+│   │   ├── Policy changes
+│   │   │   ├── Suggestions for policy changes
+│   │   ├── Reasons behind racism/discrimination
+│   │   │   ├── Politicians initiated anti-Asian hate and racism
+│   │   │   ├── Undermining human rights
+│   ├── Not specified
+│   │   ├── Youth as not an excuse (commenting on Atlanta's shooter)
+│   │   ├── Policy changes
+│   │   │   ├── Suggestions for policy changes
+│   │   ├── Reasons behind racism/discrimination
+│   │   │   ├── Politicians initiated anti-Asian hate and racism
+│   │   │   ├── Undermining human rights
+├── Outside US (Globally)
+│   ├── Support Asian Americans
+│   ├── Policy changes
+│   │   ├── Suggestions for policy changes
+│   ├── Reasons behind racism/discrimination
+│   │   ├── Politicians initiated anti-Asian hate and racism
+│   │   ├── Undermining human rights
+General public
+├── Asians
+│   ├── Support Asian Americans
+│   │   ├── Attending marches/rallies
+│   │   ├── Speaking up on social media
+│   │   ├── Calling for being united
+│   ├── Hoping or advocacy for change (in the large society; in educational systems)
+│   ├── Policy changes
+│   │   ├── Suggestions for policy changes
+│   ├── Reasons behind racism/discrimination
+│   │   ├── Politicians initiated anti-Asian hate and racism
+│   │   ├── Undermining human rights
+├── Non-Asians
+│   ├── Support Asian Americans
+│   │   ├── Attending marches/rallies
+│   │   ├── Speaking up on social media
+│   ├── Policy changes
+│   │   ├── Suggestions for policy changes
+│   ├── Color blind/minimizing racism
+│   ├── Reasons behind racism/discrimination
+│   │   ├── Politicians initiated anti-Asian hate and racism
+│   │   ├── Undermining human rights
+│   ├── Videotaping/confronting harasser/attacker
+├── Not specified
+│   ├── Support Asian Americans
+│   │   ├── Attending marches/rallies
+│   │   ├── Speaking up on social media
+│   ├── Policy changes
+│   │   ├── Suggestions for policy changes
+│   ├── Color blind/minimizing racism
+│   ├── Reasons behind racism/discrimination
+│   │   ├── Politicians initiated anti-Asian hate and racism
+│   │   ├── Undermining human rights
+│   ├── Videotaping/confronting harasser/attacker
+Perpetrators
+├── Non-Asians
+│   ├── Color blind/minimizing racism
+│   ├── Sex (sexual) addition (describing Atlanta shooter)
+│   ├── Religion as a reason (describing Atlanta shooter's motive)
+├── Not specified
+│   ├── Color blind/minimizing racism
+Victims
+├── Asians
+│   ├── Feeling hopeless or support AAPI being not enough
+│   ├── Not confronting attacker/harasser or not reporting
+│   │   ├── Reasons behind not reporting
+│   ├── Videotaping/confronting harasser/attacker
+│   ├── Support Asian Americans
+│   │   ├── Attending marches/rallies
+│   │   ├── Speaking up on social media
+│   │   ├── Calling for being united
+Business owners
+├── Asians
+│   ├── Support Asian Americans
+│   │   ├── Attending marches/rallies
+│   │   ├── Speaking up on social media
+│   │   ├── Calling for being united
+│   ├── Hoping or advocacy for change (in the large society; in educational systems)
+│   ├── Policy changes
+│   │   ├── Suggestions for policy changes
+│   ├── Feeling hopeless or support AAPI being not enough
+│   ├── Reasons behind racism/discrimination
+│   │   ├── Politicians initiated anti-Asian hate and racism
+│   │   ├── Undermining human rights
+├── Non-Asians
+│   ├── Support Asian Americans
+│   │   ├── Attending marches/rallies
+│   │   ├── Speaking up on social media
+│   ├── Policy changes
+│   │   ├── Suggestions for policy changes
+│   ├── Color blind/minimizing racism
+│   ├── Reasons behind racism/discrimination
+│   │   ├── Politicians initiated anti-Asian hate and racism
+│   │   ├── Undermining human rights
+│   ├── Videotaping/confronting harasser/attacker
+├── Not specified
+│   ├── Support Asian Americans
+│   │   ├── Attending marches/rallies
+│   │   ├── Speaking up on social media
+│   ├── Policy changes
+│   │   ├── Suggestions for policy changes
+│   ├── Color blind/minimizing racism
+│   ├── Reasons behind racism/discrimination
+│   │   ├── Politicians initiated anti-Asian hate and racism
+│   │   ├── Undermining human rights
+│   ├── Videotaping/confronting harasser/attacker
+
+Organization reaction concept tree:
+Organizations Reactions toward Anti-Asian Hate
+Law enforcement agency
+├── Local police (e.g., city- and state-level)
+│   ├── Useless law enforcement
+│   │   ├── Did not take a report on Anti-Asian hate crime
+│   │   ├── color blind/minimizing racism
+│   │   ├── Did not often patrol the streets
+├── Federal agency (e.g., FBI)
+│   ├── color blind/minimizing racism
+Government officers
+├── City
+│   ├── Government takes actions to stop AAPI hate
+│   │   ├── Installing hotlines for reporting incidents
+│   │   ├── launching the Asian hate crime task force
+│   │   ├── Increasing patrols
+│   │   ├── organizing a town hall
+│   │   ├── policy changes
+│   │   │   ├── Expanding criminal background checks on firearms
+│   │   │   ├── mandating the collection and reporting of anti-Asian hate crimes
+├── State
+│   ├── Government takes actions to stop AAPI hate
+│   │   ├── Installing hotlines for reporting incidents
+│   │   ├── launching the Asian hate crime task force
+│   │   ├── Increasing patrols
+│   │   ├── organizing a town hall
+│   │   ├── policy changes
+│   │   │   ├── Expanding criminal background checks on firearms
+│   │   │   ├── mandating the collection and reporting of anti-Asian hate crimes
+├── Feberal
+│   ├── Government takes actions to stop AAPI hate
+│   │   ├── launching the Asian hate crime task force
+│   │   ├── policy changes
+│   │   │   ├── implementing gun control action
+Group/Association (NGO)
+├── Stop AAPI hate
+│   ├── Hoping or advocacy for change (in the large society; in educational systems)
+│   ├── support Asian Americans
+│   ├── Reasons behind racism/discrimination 
+│   │   ├── Politicians initiated anti-Asian hate and racism
+Stores
+├── Asian
+│   ├── Support Asian Americans
+│   │   ├── hiring security guards
+│   │   ├── providing shopkeepers with air horns
+├── not specified
+│   ├── Support Asian Americans
+│   │   ├── hiring security guards
+│   │   ├── providing shopkeepers with air horns
+Communities
+├── Asian
+│   ├── Support Asian Americans
+│   │   ├── Attending marches/rallies
+│   │   ├── Fostering conversations about anti-Asian hate
+├── not specified
+│   ├── Support Asian Americans
+│   │   ├── Attending marches/rallies
+│   │   ├── Fostering conversations about anti-Asian hate
+
+
+Step 3: Infer Reactions or Emotions
+Using the extracted sentences, infer the reactions and emotions toward Asian-hate for each named entity. Provide the entity type, reaction and emotion, and a reason for each inference. If an entity's emotion cannot be inferred, state "Cannot be inferred." If an entity's reaction cannot be inferred, state "Cannot be inferred."
+
+
+Step 4: Generate /-delimited format
+Using the output in step 3, convert it into a /-delimited format. Please only response in the following format. There's no need to further response like "Here is the output for Step 4 in the /-delimited format:"
+
+Output form:
+Entity/Entity Type/Reaction/Emotion/Reason
+
+Now, please analyze the following text using these steps:
